@@ -1,0 +1,127 @@
+PODS:
+  - BiometricAuthentication (3.1.3)
+  - CocoaLumberjack (3.8.5):
+    - CocoaLumberjack/Core (= 3.8.5)
+  - CocoaLumberjack/Core (3.8.5)
+  - CropViewController (2.7.4)
+  - CTSlidingUpPanel (1.2.0)
+  - DGCharts (5.1.0):
+    - DGCharts/Core (= 5.1.0)
+  - DGCharts/Core (5.1.0)
+  - DropDown (2.3.13)
+  - IQKeyboardManagerSwift (7.0.3)
+  - KnobGestureRecognizer (1.0.0)
+  - ListPlaceholder (1.5)
+  - MintFramework (0.0.1):
+    - BiometricAuthentication
+    - CropViewController
+    - CTSlidingUpPanel
+    - DGCharts
+    - DropDown
+    - IQKeyboardManagerSwift
+    - KnobGestureRecognizer (~> 1.0)
+    - ListPlaceholder
+    - Mixpanel-swift
+    - NVActivityIndicatorView/Extended
+    - OTPFieldView
+    - OTPTextField
+    - SDWebImage
+    - SideMenu (~> 6.4.8)
+    - SVGKit
+    - SwiftyJSON (~> 5.0)
+    - TextFieldEffects
+    - "UINavigationItem+Margin"
+    - VoltFramework (~> 1.0.20)
+    - YPImagePicker
+  - Mixpanel-swift (4.2.7):
+    - Mixpanel-swift/Complete (= 4.2.7)
+  - Mixpanel-swift/Complete (4.2.7)
+  - NVActivityIndicatorView/Base (5.2.0)
+  - NVActivityIndicatorView/Extended (5.2.0):
+    - NVActivityIndicatorView/Base
+  - OTPFieldView (1.0.1)
+  - OTPTextField (1.1.5)
+  - PryntTrimmerView (4.0.2)
+  - SDWebImage (5.19.4):
+    - SDWebImage/Core (= 5.19.4)
+  - SDWebImage/Core (5.19.4)
+  - SideMenu (6.4.9)
+  - SteviaLayout (5.1.2)
+  - SVGKit (3.0.0):
+    - CocoaLumberjack (~> 3.0)
+  - SwiftyJSON (5.0.2)
+  - TextFieldEffects (1.6.0)
+  - "UINavigationItem+Margin (2.1.1)"
+  - VoltFramework (1.0.20)
+  - YPImagePicker (5.2.2):
+    - PryntTrimmerView (= 4.0.2)
+    - SteviaLayout (= 5.1.2)
+
+DEPENDENCIES:
+  - "MintFramework (from `https://dharmendraInvestwell@bitbucket.org/mintframeworkios/mintframework.git`, branch `master1`)"
+
+SPEC REPOS:
+  trunk:
+    - BiometricAuthentication
+    - CocoaLumberjack
+    - CropViewController
+    - CTSlidingUpPanel
+    - DGCharts
+    - DropDown
+    - IQKeyboardManagerSwift
+    - KnobGestureRecognizer
+    - ListPlaceholder
+    - Mixpanel-swift
+    - NVActivityIndicatorView
+    - OTPFieldView
+    - OTPTextField
+    - PryntTrimmerView
+    - SDWebImage
+    - SideMenu
+    - SteviaLayout
+    - SVGKit
+    - SwiftyJSON
+    - TextFieldEffects
+    - "UINavigationItem+Margin"
+    - VoltFramework
+    - YPImagePicker
+
+EXTERNAL SOURCES:
+  MintFramework:
+    :branch: master1
+    :git: "https://dharmendraInvestwell@bitbucket.org/mintframeworkios/mintframework.git"
+
+CHECKOUT OPTIONS:
+  MintFramework:
+    :commit: 014a212ba1b7617398fc206ed55709516484ff94
+    :git: "https://dharmendraInvestwell@bitbucket.org/mintframeworkios/mintframework.git"
+
+SPEC CHECKSUMS:
+  BiometricAuthentication: b63d51be9260ba94165e032829ae78f074b129df
+  CocoaLumberjack: 6a459bc897d6d80bd1b8c78482ec7ad05dffc3f0
+  CropViewController: 3489bbf95a3e11c654382b0bae08ac645cdf1b93
+  CTSlidingUpPanel: 339b11e3f6f2173f9cc21108fb127a6a849171d5
+  DGCharts: 1c6daf585b6cfc78807af44ea690d357c410627f
+  DropDown: 8a2116376c1981888557f72ec2ffc9a5e0e456ec
+  IQKeyboardManagerSwift: f9c5dc36cba16ddd2e51fa7d51c34a2e083029b5
+  KnobGestureRecognizer: 146a38716a088e3fb8a3c77f33d7fe05e47eaa21
+  ListPlaceholder: 2d7950014852ee5613d636cf14fd1bb93419e330
+  MintFramework: 8e2098c06aadd084dc10b64fa246473dbdcfb395
+  Mixpanel-swift: 7f5b749dbda2708033d67ff3d7a91710468d4a38
+  NVActivityIndicatorView: fe52a6a68664c2df8991d7d9e3d86d8d19453c53
+  OTPFieldView: 700a752fe62c41d1c4914c78aa500fb30d97c255
+  OTPTextField: 9d35010a6356972471298aea37bf8d6d5f9974f7
+  PryntTrimmerView: 6a43cc90df5d99addeabd33d4ba09b1365322130
+  SDWebImage: 066c47b573f408f18caa467d71deace7c0f8280d
+  SideMenu: 8ef57a3cfc024a2d3fc1c036c7fe98537baec9e0
+  SteviaLayout: 05424e528d643657d39ce72c786e4adf13cfc5f2
+  SVGKit: 1ad7513f8c74d9652f94ed64ddecda1a23864dea
+  SwiftyJSON: f5b1bf1cd8dd53cd25887ac0eabcfd92301c6a5a
+  TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
+  "UINavigationItem+Margin": 7368d506fb2f7daa0c0489846cc8c2384ab1ab6d
+  VoltFramework: e1461f97421654212c5de16192fb492d59d548de
+  YPImagePicker: afc81b3cffab05a6e7261c5daf80dc31b4e917b4
+
+PODFILE CHECKSUM: 4ca9ba4dd4f316a991268e2b1296d9432aab48cf
+
+COCOAPODS: 1.15.2
