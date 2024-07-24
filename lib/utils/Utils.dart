@@ -3,7 +3,7 @@ import 'dart:io';
 import 'package:flutter/services.dart';
 
 class MintUtils {
-  static const platform = const MethodChannel('mint-android-app');
+  static const platform = MethodChannel('mint-android-app');
 }
 
 bool isPlatformAndroid() {

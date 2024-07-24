@@ -42,7 +42,7 @@ class _SecondScreenState extends State<SecondScreen> {
 
     // API endpoint
     final String url =
-        "https://roinetsecurities.investwell.app/api/aggregator/auth/getAuthorizationToken";
+        "https://demo.investwell.app/api/aggregator/auth/getAuthorizationToken";
 
     try {
       // Make POST request
@@ -52,8 +52,8 @@ class _SecondScreenState extends State<SecondScreen> {
       ]);
 
       Map<String, String> jsonBody = {
-        "authName": "RoinetsecApi",
-        "password": "roinetsec12345"
+        "authName": "demoapi",
+        "password": "API@1001"
       };
       final urls = Uri.parse(url);
       final response = await http.post(urls, body: jsonBody);
@@ -91,7 +91,7 @@ class _SecondScreenState extends State<SecondScreen> {
   Map<String, String> getParams(String token, String type) {
     Map<String, String> params = {
       "token": token,
-      "username": type.isEmpty ? "CSP000073" : "CSP000073",
+      "username": type.isEmpty ? "aabcp7138a223" : "",
     };
 
     return params;
@@ -105,7 +105,7 @@ class _SecondScreenState extends State<SecondScreen> {
 
     // API endpoint
     final String url =
-        "https://roinetsecurities.investwell.app/api/aggregator/auth/getAuthenticationKey";
+        "https://demo.investwell.app/api/aggregator/auth/getAuthenticationKey";
 
     try {
       // Make POST request
@@ -130,7 +130,7 @@ class _SecondScreenState extends State<SecondScreen> {
           Map<String, String> jso = {
             'ssoToken': '$SSOToken',
             'fcmToken': 'your_fcm_token',
-            'domain': 'roinetsecurities'
+            'domain': 'demo'
           };
           openMintLib(jso);
         } else {

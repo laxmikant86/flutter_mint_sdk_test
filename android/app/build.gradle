@@ -35,7 +35,9 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-
+    buildFeatures {
+        dataBinding = true
+    }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
     }
@@ -69,8 +71,8 @@ flutter {
 dependencies {
     implementation 'com.google.android.material:material:1.6.0'
     implementation("androidx.appcompat:appcompat:1.6.1")
-//    implementation("com.github.investwell-tools:mint-android-app:1.0.9alpha")
-    implementation("com.github.investwell-tools:mint-android-app:1.0.4")
+    implementation("com.github.investwell-tools:mint-android-app:1.0.02beta")
+//    implementation("com.github.investwell-tools:mint-android-app:1.0.01beta")
     implementation "androidx.fragment:fragment-ktx:1.6.2"
 
 

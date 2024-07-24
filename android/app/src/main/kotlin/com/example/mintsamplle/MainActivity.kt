@@ -54,7 +54,14 @@ class MainActivity: FlutterActivity() {
                         sso = tokenResponse.optString("ssoToken")
                         fcm = tokenResponse.optString("fcmToken")
                     }
-                    invokeSDK(sso,fcm,domain)
+                    //invokeSDK(sso,fcm,domain)
+                    val intentsdk = Intent(this@MainActivity, MintSDKInit::class.java)
+                    intentsdk.putExtra("route","main")
+                    intentsdk.putExtra("sso",sso)
+                    intentsdk.putExtra("domain",domain)
+                    intentsdk.putExtra("fcm",fcm)
+                    startActivity(intentsdk)
+
                     result.success("Success")
                 }catch (e: JSONException) {
                     // Handle JSON parsing error
@@ -67,10 +74,7 @@ class MainActivity: FlutterActivity() {
 
     }
 
-    private fun invokeSDK(sso: String,fcmToken:String,domain:String,classWithPackage:String= "${this@MainActivity.packageName}.MainActivity") {
-        val mintSdk = MintSDK(this@MainActivity)
-        mintSdk.invokeMintSDK(sso,fcmToken,domain,classWithPackage)
-    }
+
 
 }
 
