@@ -78,7 +78,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // API endpoint
     final String url =
-        "https://demo.investwell.app/api/aggregator/auth/getAuthorizationToken";
+        "https://shareindia.investwell.app/api/aggregator/auth/getAuthorizationToken";
 
     try {
       // Make POST request
@@ -88,8 +88,8 @@ class _MyHomePageState extends State<MyHomePage> {
       ]);
 
       Map<String, String> jsonBody = {
-        "authName": "demoapi",
-        "password": "API@1001"
+        "authName": "ShareinApi",
+        "password": "shareind@4321"
       };
       final urls = Uri.parse(url);
       final response = await http.post(urls, body: jsonBody);
@@ -127,7 +127,8 @@ class _MyHomePageState extends State<MyHomePage> {
   Map<String, String> getParams(String token, String type) {
     Map<String, String> params = {
       "token": token,
-      "username": type.isEmpty ? "aabcp7138a223" : "",
+      /*"username": type.isEmpty ? "aabcp7138a223" : "",*/
+      "username": type.isEmpty ? "OABR80" : "",
     };
 
     return params;
@@ -141,7 +142,7 @@ class _MyHomePageState extends State<MyHomePage> {
 
     // API endpoint
     final String url =
-        "https://demo.investwell.app/api/aggregator/auth/getAuthenticationKey";
+        "https://shareindia.investwell.app/api/aggregator/auth/getAuthenticationKey";
 
     try {
       // Make POST request
@@ -166,7 +167,7 @@ class _MyHomePageState extends State<MyHomePage> {
           Map<String, String> jso = {
             'ssoToken': '$SSOToken',
             'fcmToken': 'your_fcm_token',
-            'domain': 'demo'
+            'domain': 'shareindia'
           };
           openMintLib(jso);
         } else {

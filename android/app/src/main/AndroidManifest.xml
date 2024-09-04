@@ -24,7 +24,7 @@
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
-            android:theme="@style/LaunchTheme"
+            android:theme="@style/Theme.AppCompat"
             android:configChanges="orientation|keyboardHidden|keyboard|screenSize|smallestScreenSize|locale|layoutDirection|fontScale|screenLayout|density|uiMode"
             android:hardwareAccelerated="true"
             android:windowSoftInputMode="adjustResize">
@@ -42,7 +42,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MintSDKInit"
-            android:launchMode="singleInstancePerTask"
+            android:launchMode="singleTask"
+            android:parentActivityName=".MainActivity"
             />
         <!-- Don't delete the meta-data below.
              This is used by the Flutter tool to generate GeneratedPluginRegistrant.java -->
