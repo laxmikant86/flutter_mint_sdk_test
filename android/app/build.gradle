@@ -35,8 +35,11 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
+//    buildFeatures {
+//        dataBinding = true
+//    }
     buildFeatures {
-        dataBinding = true
+        dataBinding true // Enable data binding if used
     }
     sourceSets {
         main.java.srcDirs += 'src/main/kotlin'
@@ -69,11 +72,11 @@ flutter {
 }
 
 dependencies {
-    implementation 'com.google.android.material:material:1.6.0'
+    implementation 'com.google.android.material:material:1.12.0'
     implementation("androidx.appcompat:appcompat:1.6.1")
-    implementation("com.github.investwell-tools:mint-android-app:1.0.8")
+    implementation("com.github.investwell-tools:mint-android-app:1.1.13")
 //    implementation("com.github.investwell-tools:mint-android-app:1.0.01beta")
-    implementation "androidx.fragment:fragment-ktx:1.6.2"
+    //implementation "androidx.fragment:fragment-ktx:1.6.2"
 
 
 

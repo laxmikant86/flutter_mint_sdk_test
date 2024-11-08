@@ -21,7 +21,7 @@ class MintSDKInit: FlutterActivity() {
         getBundles()
     }
     private fun getBundles(){
-       if (intent !=null && intent.hasExtra("route") /*&& isInintiated != true*/){
+       if (intent !=null && intent.hasExtra("route") && MainActivity.sdkInitialized==true /*&& isInintiated != true*/){
            val domain :String = intent.getStringExtra("domain")!!
            val fcm :String= intent.getStringExtra("fcm")!!
            val sso :String= intent.getStringExtra("sso")!!

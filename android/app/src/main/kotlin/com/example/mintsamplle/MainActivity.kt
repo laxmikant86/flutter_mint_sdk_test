@@ -30,6 +30,9 @@ class MainActivity: FlutterFragmentActivity() {
     private val CHANNEL = "mint-android-app"
     private var msession: AppSession?= null
 
+    companion object{
+        var sdkInitialized:Boolean?=false
+    }
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -73,6 +76,7 @@ class MainActivity: FlutterFragmentActivity() {
 //                    invokeSDK(sso,fcm,domain)
 //                    invoke(sso, fcmToken = fcm, domain = domain)
                     val taskStackBuilder = TaskStackBuilder.create(this@MainActivity)
+                    sdkInitialized=true
                     val intentsdk = Intent(this@MainActivity, MintSDKInit::class.java)
                     intentsdk.putExtra("route","main")
                     intentsdk.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP or Intent.FLAG_ACTIVITY_PREVIOUS_IS_TOP)
